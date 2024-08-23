@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Gt super;
+    font-family: Gt_super;
     src: url(fonts/gt-super-400-normal.woff);
 }
 @font-face {
@@ -7,20 +7,45 @@
     src: url(fonts/sohne-400-normal.woff);
 }
 html,body{
-    height: 100%;
-    width: 100%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
+    /* height: 100%;
+    width: 100%; */
     font-family: sonse;
 }
+.contaner{
+    max-width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+.btn{
+    background: black;
+    color: white;
+    border-radius: 22px;
+    border: none;
+    padding: 8px 16px;
+}
 header{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 20px;
 }
-.navbar{
+header.contaner{
+    background-color: orange;
     display: flex;
-    gap:10;  
+    justify-content: space-around;
+    align-items: center;
 }
+header.nav{
+    display: flex;
+    gap:20px;
+}   
+@media screen and (max-width:728px){
+.md.hidden{
+    display: none;
+}}
